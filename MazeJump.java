@@ -7,7 +7,7 @@ public class MazeJump{
     int m=s.nextInt();
     printmazejumppath(1,1,n,m," ");
   }
-  public static void  printmazejumppath(int sr,int sc,int dr,int dc,int path){
+  public static void  printmazejumppath(int sr,int sc,int dr,int dc,String path){
     //base case 
     if(sr==dr && sc==dc){
       System.out.println(path);
