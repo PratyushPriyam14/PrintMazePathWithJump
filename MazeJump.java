@@ -14,16 +14,16 @@ public class MazeJump{
       return;
     }
     //horizontal move
-    for(int ms=1;ms<=dc-sc;i++)
+    for(int ms=1;ms<=dc-sc;ms++)
     {
        printmazejumppath(sr,sc+ms,dr,dc,path+"h"+ms);
     }
     //vertical move
-    for(int ms=1;ms<=dr-sr;i++){
+    for(int ms=1;ms<=dr-sr;ms++){
        printmazejumppath(sr+ms,sc,dr,dc,path+"v"+ms);
     }
     //diagonal move
-    for(int ms=1;ms<=dr-sr && ms<=dc-sc;i++){
+    for(int ms=1;ms<=dr-sr && ms<=dc-sc;ms++){
        printmazejumppath(sr+ms,sc+ms,dr,dc,path+"d"+ms);
     }
   }
